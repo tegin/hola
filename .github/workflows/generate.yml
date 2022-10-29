@@ -1,0 +1,19 @@
+name: tests
+
+on:
+  push:
+    branches:
+      - "master"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - uses: tegin/action@master
+        with:
+          persist-credentials: false
+      
