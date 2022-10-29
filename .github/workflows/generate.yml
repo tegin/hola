@@ -15,5 +15,5 @@ jobs:
           persist-credentials: false
       - uses: tegin/action@master
         with:
-          persist-credentials: false
+          token: ${{ secrets.ORG_TOKEN }}
       
