@@ -58,7 +58,7 @@ for team in data:
         else:
             members.append(member.login)
     for user in data[team]["users"]:
-        if user not in members:
+        if user not in members: 
             _logger.info("Adding membership to %s" % member.login)
             gh_team.add_or_update_membership(user)
     for repo in data[team]["repos"]:
@@ -87,8 +87,14 @@ for team in data:
                 check_call(
                     ["git", "config", "user.name", gh_user.name or gh_user.login], cwd=clone_dir
                 )
+                email = gh_user.email
+                if not email:
+                    for gh_mail in gh.emails():
+                        if gh_mail.primary:
+                            email = gh_mail.email
+                            break
                 check_call(
-                    ["git", "config", "user.email", gh_user.email], cwd=clone_dir
+                    ["git", "config", "user.email", email], cwd=clone_dir
                 )
                 check_call(
                     ["git", "add", "-A"],
