@@ -124,7 +124,7 @@ for team in data:
                     cwd=clone_dir,
                 )
                 check_call(
-                    ["git", "push", "origin", version],
+                    ["git", "push", "origin", "HEAD"],
                     cwd=clone_dir,
                 )
             except CalledProcessError as e:
