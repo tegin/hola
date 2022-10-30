@@ -35,6 +35,7 @@ def check_call(cmd, cwd, log_error=True, extra_cmd_args=False, env=None):
 org = sys.argv[1]
 token = sys.argv[2]
 version = sys.argv[3]
+new_repo_template = "https://github.com/OCA/oca-addons-repo-template"
 
 with open("generate.yml", "r") as f:
     data = yaml.safe_load(f.read())
