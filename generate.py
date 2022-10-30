@@ -84,9 +84,8 @@ for team in data:
                     cwd=clone_dir,
                 )
                 gh_user = gh.me()
-                print(gh_user.login, gh_user.name)
                 check_call(
-                    ["git", "config", "user.name", gh_user.name], cwd=clone_dir
+                    ["git", "config", "user.name", gh_user.name or gh_user.login], cwd=clone_dir
                 )
                 check_call(
                     ["git", "config", "user.email", gh_user.email], cwd=clone_dir
