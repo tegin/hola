@@ -1,5 +1,6 @@
 demo:
   users:
+    - teginbot
     - etobella
   repos:
     - hola
