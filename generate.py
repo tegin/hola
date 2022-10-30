@@ -9,7 +9,11 @@ import copier
 import shutil
 from subprocess import CalledProcessError
 
-logging.basicConfig(level=logging.INFO)
+handler = logging.StreamHandler(sys.stdout)
+handler.setLevel(logging.INFO)
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+logging.basicConfig(level=logging.INFO, handlers=[handler])
 
 _logger = logging.getLogger(__name__)
 
@@ -35,7 +39,7 @@ def check_call(cmd, cwd, log_error=True, extra_cmd_args=False, env=None):
 org = sys.argv[1]
 token = sys.argv[2]
 version = sys.argv[3]
-new_repo_template = "https://github.com/OCA/oca-addons-repo-template"
+new_repo_template = "git+https://github.com/OCA/oca-addons-repo-template"
 
 with open("generate.yml", "r") as f:
     data = yaml.safe_load(f.read())
@@ -63,9 +67,9 @@ for team in data:
             gh_team.add_or_update_membership(user)
     for repo in data[team]["repos"]:
         if repo in repo_keys:
-            repo = gh.repository(org, repo)
+            gh_repo = gh.repository(org, repo)
         else:
-            repo = gh_org.create_repository(
+            gh_repo = gh_org.create_repository(
                 repo, repo, team_id=gh_team.id
             )
             try:
@@ -109,7 +113,7 @@ for team in data:
                     cwd=clone_dir,
                 )
                 check_call(
-                    ["git", "remote", "add", "origin", repo.url],
+                    ["git", "remote", "add", "origin", gh_repo.url],
                     cwd=clone_dir,
                 )
                 check_call(
