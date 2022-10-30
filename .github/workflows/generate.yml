@@ -1,4 +1,4 @@
-name: Generate code
+name: Generate
 
 on:
   push:
@@ -16,6 +16,6 @@ jobs:
           python-version: "3.9"
       - name: Install requirements
         run: python -m pip install -r requirements.txt
-      - name: Run Generate
-        run: python generate.py
+      - name: Run tox
+        run: python generate.py ${{ secrets.ORG_TOKEN }}
       
