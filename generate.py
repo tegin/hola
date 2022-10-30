@@ -83,11 +83,12 @@ for team in data:
                     ["git", "init"],
                     cwd=clone_dir,
                 )
+                gh_user = gh.user()
                 check_call(
-                    ["git", "config", "user.name", gh.user.name], cwd=clone_dir
+                    ["git", "config", "user.name", gh_user.name], cwd=clone_dir
                 )
                 check_call(
-                    ["git", "config", "user.email", gh.user.email], cwd=clone_dir
+                    ["git", "config", "user.email", gh_user.email], cwd=clone_dir
                 )
                 check_call(
                     ["git", "add", "-A"],
