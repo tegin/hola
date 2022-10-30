@@ -23,12 +23,12 @@ for team in data:
         gh_team = gh_org.create_team(team, privacy="closed")
     members = []
     for member in gh_team.members():
-        if member.login not in data[team].users:
+        if member.login not in data[team]["users"]:
             _logger.info("Revoking membership for %s" % member.login)
             gh_team.revoke_membership(member.login)
         else:
             members.append(member.login)
-    for user in data[team].users:
+    for user in data[team]["users"]:
         if user not in members:
             _logger.info("Adding membership to %s" % member.login)
             gh_team.add_or_update_membership(user)
