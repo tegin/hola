@@ -59,15 +59,10 @@ board:
   name: Board
 brand-maintainers:
   members:
-  - max3903
   - sbejaoui
-  representatives: []
-  name: Brand Maintainers
-brand-maintainers-psc-representative:
-  members:
+  representatives: 
   - max3903
-  representatives: []
-  name: Brand Maintainers PSC Representative
+  name: Brand Maintainers
 community-maintainers:
   members:
   - guewen
@@ -155,18 +150,12 @@ connector-woocommerce-maintainers:
   name: Connector WooCommerce Maintainers
 cooperative-maintainers:
   members:
-  - robinkeunen
   - houssine78
   - remytms
   representatives:
+  - robinkeunen
   - sbidoul
   name: Cooperative Maintainers
-cooperative-maintainers-psc-representative:
-  members:
-  - robinkeunen
-  representatives:
-  - sbidoul
-  name: Cooperative Maintainers PSC Representative
 core-maintainers:
   members:
   - rvalyi
@@ -230,11 +219,6 @@ deployment-tools-maintainers:
   representatives:
   - gurneyalex
   name: Deployment Tools Maintainers
-deployment-tools-maintainers-psc-representative:
-  members: []
-  representatives:
-  - gurneyalex
-  name: Deployment Tools Maintainers PSC Representative
 document-maintainers:
   members:
   - lmignon
@@ -335,26 +319,16 @@ intercompany-maintainers:
   name: Intercompany Maintainers
 intrastat-maintainers:
   members:
-  - alexis-via
   - luc-demeyer
-  representatives: []
-  name: Intrastat Maintainers
-intrastat-maintainers-psc-representative:
-  members:
+  representatives:
   - alexis-via
-  representatives: []
-  name: Intrastat Maintainers PSC Representative
+  name: Intrastat Maintainers
 iot-maintainers:
   members:
   - JordiBForgeFlow
+  representatives:
   - etobella
-  representatives: []
   name: IoT Maintainers
-iot-maintainers-psc-representative:
-  members:
-  - etobella
-  representatives: []
-  name: IoT Maintainers PSC Representative
 local-argentina-maintainers:
   members:
   - sebastiken
@@ -565,15 +539,10 @@ local-luxemburg-maintainers:
   - sbidoul
   name: Local Luxemburg Maintainers
 local-macedonia-maintainers:
-  members:
+  members: []
+  representatives: 
   - kirca
-  representatives: []
   name: Local Macedonia Maintainers
-local-macedonia-maintainers-psc-representative:
-  members:
-  - kirca
-  representatives: []
-  name: Local Macedonia Maintainers PSC Representative
 local-mexico-maintainers:
   members:
   - nhomar
@@ -679,25 +648,15 @@ local-uk-maintainers:
   representatives: []
   name: Local UK Maintainers
 local-ukraine-maintainers:
-  members:
+  members: []
+  representatives:
   - alexey-pelykh
-  representatives: []
   name: Local Ukraine Maintainers
-local-ukraine-maintainers-psc-representative:
-  members:
-  - alexey-pelykh
-  representatives: []
-  name: Local Ukraine Maintainers PSC Representative
 local-uruguay-maintainers:
-  members:
+  members: []
+  representatives:
   - max3903
-  representatives: []
   name: Local Uruguay Maintainers
-local-uruguay-maintainers-psc-representative:
-  members:
-  - max3903
-  representatives: []
-  name: Local Uruguay Maintainers PSC Representative
 local-usa-maintainers:
   members:
   - max3903
@@ -730,12 +689,8 @@ logistics-maintainers:
   - jgrandguillaume
   - simahawk
   - gurneyalex
-  name: Logistics Maintainers
-logistics-maintainers-psc-representative:
-  members:
   - rousseldenis
-  representatives: []
-  name: Logistics Maintainers PSC Representative
+  name: Logistics Maintainers
 maintenance-maintainers:
   members:
   - pedrobaeza
@@ -866,18 +821,13 @@ reporting-engine-maintainers:
   name: Reporting Engine Maintainers
 rest-framework-maintainers:
   members:
-  - lmignon
   - sebastienbeau
   representatives:
   - simahawk
   - sbidoul
   - gurneyalex
-  name: REST Framework Maintainers
-rest-framework-maintainers-psc-representative:
-  members:
   - lmignon
-  representatives: []
-  name: REST Framework Maintainers PSC Representative
+  name: REST Framework Maintainers
 role-policy-maintainers:
   members:
   - joaoalf
@@ -1032,11 +982,6 @@ vertical-rental-maintainers:
   - OSevangelist
   - gurneyalex
   name: Vertical Rental Maintainers
-vertical-rental-psc-representative:
-  members: []
-  representatives:
-  - gurneyalex
-  name: Vertical Rental PSC Representative
 vertical-travel-maintainers:
   members:
   - max3903
