@@ -1,7 +1,1079 @@
-demo:
-  name: Demo Team
-  representatives:
-    - teginbot
+accounting-maintainers:
   members:
-    - etobella
-    - kluna1998
+  - grindtildeath
+  - max3903
+  - alexis-via
+  - kittiu
+  - tafaRU
+  - fclementic2c
+  - pedrobaeza
+  - sergiocorato
+  - JordiBForgeFlow
+  - adrienpeiffer
+  - rafaelbn
+  - AaronHForgeFlow
+  - HaraldPanten
+  - joao-p-marques
+  representatives:
+  - jgrandguillaume
+  - sbidoul
+  name: Accounting Maintainers
+backport-maintainers:
+  members:
+  - StefanRijnhart
+  - hbrunn
+  - pedrobaeza
+  representatives:
+  - gurneyalex
+  name: Backport Maintainers
+banking-maintainers:
+  members:
+  - alexey-pelykh
+  - grindtildeath
+  - StefanRijnhart
+  - alexis-via
+  - fclementic2c
+  - pedrobaeza
+  - JordiBForgeFlow
+  - adrienpeiffer
+  - AaronHForgeFlow
+  - etobella
+  - HaraldPanten
+  - joao-p-marques
+  representatives:
+  - sbidoul
+  name: Banking Maintainers
+board:
+  members:
+  - etobella
+  representatives:
+  - jgrandguillaume
+  - simahawk
+  - OSevangelist
+  - sbidoul
+  - dreispt
+  - bguillot
+  - gurneyalex
+  - gdgellatly
+  - vdewulf
+  name: Board
+brand-maintainers:
+  members:
+  - max3903
+  - sbejaoui
+  representatives: []
+  name: Brand Maintainers
+brand-maintainers-psc-representative:
+  members:
+  - max3903
+  representatives: []
+  name: Brand Maintainers PSC Representative
+community-maintainers:
+  members:
+  - guewen
+  - StefanRijnhart
+  - sebastienbeau
+  - pedrobaeza
+  - joao-p-marques
+  representatives:
+  - jgrandguillaume
+  - simahawk
+  - sbidoul
+  - dreispt
+  - gurneyalex
+  name: Community Maintainers
+connector-infor-maintainers:
+  members:
+  - max3903
+  representatives: []
+  name: Connector Infor Maintainers
+connector-lengow-maintainers:
+  members:
+  - Cedric-Pigeon
+  representatives: []
+  name: Connector Lengow Maintainers
+connector-lims-maintainers:
+  members:
+  - max3903
+  representatives: []
+  name: Connector LIMS Maintainers
+connector-magento-maintainers:
+  members:
+  - guewen
+  - OSguard
+  representatives:
+  - simahawk
+  - gurneyalex
+  name: Connector Magento Maintainers
+connector-maintainers:
+  members:
+  - guewen
+  - lmignon
+  representatives:
+  - simahawk
+  - sbidoul
+  - gurneyalex
+  name: Connector Maintainers
+connector-odoo2odoo:
+  members:
+  - ajite
+  - elicoidal
+  - maljac
+  representatives: []
+  name: connector-odoo2odoo
+connector-prestashop-maintainers:
+  members:
+  - flachica
+  - arthru
+  - sebastienbeau
+  - FFernandez-PlanetaTIC
+  representatives:
+  - simahawk
+  name: Connector Prestashop Maintainers
+connector-saleforce-maintainers:
+  members:
+  - nbessi
+  - guewen
+  - yvaucher
+  representatives:
+  - jgrandguillaume
+  - gurneyalex
+  name: Connector Saleforce Maintainers
+connector-spscommerce:
+  members:
+  - max3903
+  representatives: []
+  name: Connector SPSCommerce
+connector-telephony-maintainers:
+  members:
+  - alexis-via
+  representatives: []
+  name: Connector Telephony Maintainers
+connector-woocommerce-maintainers:
+  members: []
+  representatives: []
+  name: Connector WooCommerce Maintainers
+cooperative-maintainers:
+  members:
+  - robinkeunen
+  - houssine78
+  - remytms
+  representatives:
+  - sbidoul
+  name: Cooperative Maintainers
+cooperative-maintainers-psc-representative:
+  members:
+  - robinkeunen
+  representatives:
+  - sbidoul
+  name: Cooperative Maintainers PSC Representative
+core-maintainers:
+  members:
+  - rvalyi
+  - guewen
+  - max3903
+  - StefanRijnhart
+  - sebastienbeau
+  - hbrunn
+  - yvaucher
+  - moylop260
+  - pedrobaeza
+  representatives:
+  - jgrandguillaume
+  - simahawk
+  - sbidoul
+  - dreispt
+  - bguillot
+  - gurneyalex
+  name: Core Maintainers
+crm-sales-marketing-maintainers:
+  members:
+  - yajo
+  - tafaRU
+  - NL66278
+  - pedrobaeza
+  - JordiBForgeFlow
+  - rafaelbn
+  - rousseldenis
+  - newtratip
+  - HaraldPanten
+  representatives:
+  - jgrandguillaume
+  - simahawk
+  - gurneyalex
+  name: CRM, Sales & Marketing Maintainers
+currency-maintainers:
+  members:
+  - alexey-pelykh
+  - JordiBForgeFlow
+  - LoisRForgeFlow
+  representatives: []
+  name: Currency Maintainers
+data-protection-maintainers:
+  members:
+  - yajo
+  - JordiBForgeFlow
+  - MiquelRForgeFlow
+  representatives:
+  - dreispt
+  name: Data Protection Maintainers
+ddmrp-maintainers:
+  members:
+  - JordiBForgeFlow
+  - LoisRForgeFlow
+  representatives: []
+  name: DDMRP Maintainers
+deployment-tools-maintainers:
+  members:
+  - StefanRijnhart
+  - hbrunn
+  representatives:
+  - gurneyalex
+  name: Deployment Tools Maintainers
+deployment-tools-maintainers-psc-representative:
+  members: []
+  representatives:
+  - gurneyalex
+  name: Deployment Tools Maintainers PSC Representative
+document-maintainers:
+  members:
+  - lmignon
+  - max3903
+  - yajo
+  - hbrunn
+  - etobella
+  - HaraldPanten
+  - joao-p-marques
+  representatives:
+  - gurneyalex
+  name: Document Maintainers
+donation-maintainers:
+  members:
+  - alexis-via
+  - albariera
+  representatives: []
+  name: Donation Maintainers
+dotnet-maintainers:
+  members:
+  - mathi123
+  representatives: []
+  name: Dotnet Maintainers
+e-commerce-maintainers:
+  members:
+  - yajo
+  - pedrobaeza
+  - rafaelbn
+  - gfcapalbo
+  representatives:
+  - simahawk
+  - gurneyalex
+  name: E-Commerce Maintainers
+edi-maintainers:
+  members:
+  - alexis-via
+  - bealdav
+  - etobella
+  representatives:
+  - simahawk
+  - gurneyalex
+  name: EDI Maintainers
+field-service-maintainers:
+  members:
+  - max3903
+  - wolfhall
+  - hparfr
+  - smangukiya
+  - brian10048
+  - osi-scampbell
+  representatives: []
+  name: Field Service Maintainers
+fleet-maintainers:
+  members:
+  - ivantodorovich
+  representatives:
+  - simahawk
+  name: Fleet Maintainers
+geospatial-maintainers:
+  members:
+  - lmignon
+  - yvaucher
+  representatives: []
+  name: Geospatial Maintainers
+helpdesk-maintainers:
+  members:
+  - pedrobaeza
+  - DarioLodeiros
+  representatives: []
+  name: Helpdesk Maintainers
+human-resources-maintainers:
+  members:
+  - alexey-pelykh
+  - tafaRU
+  - pedrobaeza
+  - feketemihai
+  - nimarosa
+  - Saran440
+  - ddufresne
+  - albariera
+  representatives:
+  - jgrandguillaume
+  - dreispt
+  - gurneyalex
+  name: Human Resources Maintainers
+infrastructure-maintainer:
+  members:
+  - elicoidal
+  representatives: []
+  name: Infrastructure Maintainer
+intercompany-maintainers:
+  members:
+  - elicoidal
+  - JordiBForgeFlow
+  representatives:
+  - jgrandguillaume
+  - gurneyalex
+  name: Intercompany Maintainers
+intrastat-maintainers:
+  members:
+  - alexis-via
+  - luc-demeyer
+  representatives: []
+  name: Intrastat Maintainers
+intrastat-maintainers-psc-representative:
+  members:
+  - alexis-via
+  representatives: []
+  name: Intrastat Maintainers PSC Representative
+iot-maintainers:
+  members:
+  - JordiBForgeFlow
+  - etobella
+  representatives: []
+  name: IoT Maintainers
+iot-maintainers-psc-representative:
+  members:
+  - etobella
+  representatives: []
+  name: IoT Maintainers PSC Representative
+local-argentina-maintainers:
+  members:
+  - sebastiken
+  - kloss17
+  - nimarosa
+  - RBelfiore
+  representatives: []
+  name: Local Argentina Maintainers
+local-austria-maintainers:
+  members:
+  - wtaferner
+  representatives: []
+  name: Local Austria Maintainers
+local-bangladesh-maintainers:
+  members: []
+  representatives:
+  - Matiar
+  name: Local Bangladesh Maintainers
+local-belarus-maintainers:
+  members:
+  - okuryan
+  - veryberry
+  - nedaszilinskas
+  representatives: []
+  name: Local Belarus Maintainers
+local-belgium-maintainers:
+  members:
+  - robinkeunen
+  - luc-demeyer
+  representatives:
+  - sbidoul
+  name: Local Belgium Maintainers
+local-brazil-maintainers:
+  members:
+  - rvalyi
+  - renatonlima
+  - mileo
+  - marcelsavegnago
+  representatives: []
+  name: Local Brazil Maintainers
+local-bulgaria-maintainers:
+  members: []
+  representatives:
+  - rosenvladimirov
+  name: Local Bulgaria Maintainers
+local-cambodia-maintainers:
+  members: []
+  representatives: []
+  name: Local Cambodia Maintainers
+local-canada-maintainers:
+  members:
+  - joaoalf
+  - fblauer
+  - mmalorni
+  - Ehtaga
+  - ddico
+  - ddufresne
+  representatives: []
+  name: Local Canada Maintainers
+local-chile-maintainers:
+  members:
+  - Danisan
+  representatives: []
+  name: Local Chile Maintainers
+local-china-maintainers:
+  members:
+  - elicoidal
+  representatives: []
+  name: Local China Maintainers
+local-colombia-maintainers:
+  members:
+  - nhomar
+  representatives: []
+  name: Local Colombia Maintainers
+local-costa-rica-maintainers:
+  members:
+  - carlosrve
+  representatives: []
+  name: Local Costa-Rica Maintainers
+local-croatia-maintainers:
+  members:
+  - gkliska
+  - badbole
+  representatives: []
+  name: Local Croatia Maintainers
+local-ecuador-maintainers:
+  members:
+  - coodec
+  representatives: []
+  name: Local Ecuador Maintainers
+local-el-salvador-maintainers:
+  members:
+  - Capriatto
+  - JoanMarin
+  - lauracvilla-zz
+  representatives:
+  - grottas
+  name: Local El Salvador Maintainers
+local-estonia-maintainers:
+  members:
+  - alexey-pelykh
+  - okuryan
+  - veryberry
+  - nedaszilinskas
+  representatives: []
+  name: Local Estonia Maintainers
+local-ethiopia-maintainers:
+  members:
+  - mtelahun
+  representatives: []
+  name: Local Ethiopia Maintainers
+local-finland-maintainers:
+  members:
+  - jarmokortetjarvi
+  - mlaitinen
+  representatives: []
+  name: Local Finland Maintainers
+local-finland-maintainers-project-leader:
+  members:
+  - jarmokortetjarvi
+  representatives:
+  - jgrandguillaume
+  name: Local Finland Maintainers Project Leader
+local-france-maintainers:
+  members:
+  - alexis-via
+  - sebastienbeau
+  - legalsylvain
+  - fclementic2c
+  representatives: []
+  name: Local France Maintainers
+local-germany-maintainers:
+  members:
+  - OSguard
+  - tv-openbig
+  representatives: []
+  name: Local Germany Maintainers
+local-germany-maintainers-project-leader:
+  members:
+  - tv-openbig
+  representatives:
+  - jgrandguillaume
+  name: Local Germany Maintainers Project Leader
+local-greece-maintainers:
+  members:
+  - daramousk
+  - JordiBForgeFlow
+  - etobella
+  representatives: []
+  name: Local Greece Maintainers
+local-india-maintainers:
+  members:
+  - JayVora-SerpentCS
+  representatives: []
+  name: Local India Maintainers
+local-indonesia-maintainers:
+  members:
+  - andhit-r
+  representatives: []
+  name: Local Indonesia Maintainers
+local-iran-maintainers:
+  members:
+  - duanyp1991
+  - saeed-raeisi
+  representatives: []
+  name: Local Iran Maintainers
+local-ireland-maintainers:
+  members:
+  - okuryan
+  representatives: []
+  name: Local Ireland Maintainers
+local-italy-developers:
+  members:
+  - primes2h
+  - OpenCode
+  - dcorio
+  - tafaRU
+  - hurrinico
+  - sergiocorato
+  - scigghia
+  - As400it
+  - labaggio
+  representatives:
+  - eLBati
+  name: Local Italy Developers
+local-italy-maintainers:
+  members:
+  - primes2h
+  - OpenCode
+  - dcorio
+  - TheMule71
+  - eLBati
+  - tafaRU
+  - sergiocorato
+  - alessandrocamilli
+  - labaggio
+  representatives: []
+  name: Local Italy Maintainers
+local-japan-maintainers:
+  members:
+  - yostashiro
+  - TimLai125
+  representatives: []
+  name: Local Japan Maintainers
+local-luxemburg-maintainers:
+  members: []
+  representatives:
+  - sbidoul
+  name: Local Luxemburg Maintainers
+local-macedonia-maintainers:
+  members:
+  - kirca
+  representatives: []
+  name: Local Macedonia Maintainers
+local-macedonia-maintainers-psc-representative:
+  members:
+  - kirca
+  representatives: []
+  name: Local Macedonia Maintainers PSC Representative
+local-mexico-maintainers:
+  members:
+  - nhomar
+  representatives: []
+  name: Local Mexico Maintainers
+local-morocco-maintainers:
+  members:
+  - mbelaid
+  - Fouad-AGORA
+  - ierrajai
+  - redarouichi
+  - DayssamAgora
+  representatives: []
+  name: Local Morocco Maintainers
+local-netherlands-maintainers:
+  members:
+  - StefanRijnhart
+  - hbrunn
+  - andreschenkels
+  - pankk
+  - NL66278
+  representatives: []
+  name: Local Netherlands Maintainers
+local-norway-maintainers:
+  members:
+  - bringsvor
+  representatives: []
+  name: Local Norway Maintainers
+local-peru-maintainers:
+  members:
+  - pedrobaeza
+  representatives:
+  - nhomar
+  name: Local Peru Maintainers
+local-poland-maintainers:
+  members:
+  - okuryan
+  - veryberry
+  - nedaszilinskas
+  representatives: []
+  name: Local Poland Maintainers
+local-portugal-maintainers:
+  members: []
+  representatives:
+  - dreispt
+  name: Local Portugal Maintainers
+local-romania-maintainers:
+  members:
+  - feketemihai
+  - dhongu
+  representatives: []
+  name: Local Romania Maintainers
+local-russia-maintainers:
+  members:
+  - okuryan
+  - veryberry
+  - nedaszilinskas
+  representatives: []
+  name: Local Russia Maintainers
+local-slovenia-maintainers:
+  members: []
+  representatives: []
+  name: Local Slovenia Maintainers
+local-spain-maintainers:
+  members:
+  - omar7r
+  - acysos
+  - cubells
+  - pedrobaeza
+  - HaraldPanten
+  representatives: []
+  name: Local Spain Maintainers
+local-switzerland-maintainers:
+  members:
+  - nbessi
+  - vrenaville
+  - TDu
+  - yvaucher
+  - lucmaurer
+  - fclementic2c
+  representatives:
+  - jgrandguillaume
+  name: Local Switzerland Maintainers
+local-taiwan-maintainers:
+  members:
+  - uynil
+  representatives: []
+  name: Local Taiwan Maintainers
+local-thailand-maintainers:
+  members:
+  - kittiu
+  representatives: []
+  name: Local Thailand Maintainers
+local-turkey-maintainers:
+  members:
+  - aaltinisik
+  representatives: []
+  name: Local Turkey Maintainers
+local-uk-maintainers:
+  members:
+  - elicoidal
+  - nuria-opusvl
+  representatives: []
+  name: Local UK Maintainers
+local-ukraine-maintainers:
+  members:
+  - alexey-pelykh
+  representatives: []
+  name: Local Ukraine Maintainers
+local-ukraine-maintainers-psc-representative:
+  members:
+  - alexey-pelykh
+  representatives: []
+  name: Local Ukraine Maintainers PSC Representative
+local-uruguay-maintainers:
+  members:
+  - max3903
+  representatives: []
+  name: Local Uruguay Maintainers
+local-uruguay-maintainers-psc-representative:
+  members:
+  - max3903
+  representatives: []
+  name: Local Uruguay Maintainers PSC Representative
+local-usa-maintainers:
+  members:
+  - max3903
+  - thinkwelltwd
+  - stephankeller
+  - gmader
+  representatives: []
+  name: Local USA Maintainers
+local-venezuela-maintainers:
+  members:
+  - nhomar
+  representatives: []
+  name: Local Venezuela Maintainers
+local-vietnam-maintainers:
+  members:
+  - jcdrubay
+  representatives: []
+  name: Local Vietnam Maintainers
+logistics-maintainers:
+  members:
+  - tafaRU
+  - sebalix
+  - JordiBForgeFlow
+  - Cedric-Pigeon
+  - hparfr
+  - rousseldenis
+  - LoisRForgeFlow
+  - ps-tubtim
+  representatives:
+  - jgrandguillaume
+  - simahawk
+  - gurneyalex
+  name: Logistics Maintainers
+logistics-maintainers-psc-representative:
+  members:
+  - rousseldenis
+  representatives: []
+  name: Logistics Maintainers PSC Representative
+maintenance-maintainers:
+  members:
+  - pedrobaeza
+  - astirpe
+  - etobella
+  representatives:
+  - gurneyalex
+  name: Maintenance Maintainers
+management-systems-maintainers:
+  members:
+  - max3903
+  - ivantodorovich
+  - eugen-don
+  representatives:
+  - dreispt
+  - gurneyalex
+  name: Management Systems Maintainers
+manufacturing-maintainers:
+  members:
+  - anajuaristi
+  - pedrobaeza
+  - LoisRForgeFlow
+  representatives:
+  - gurneyalex
+  name: Manufacturing Maintainers
+mis-builder-maintainers:
+  members: []
+  representatives:
+  - sbidoul
+  name: MIS Builder Maintainers
+oca-apps-store:
+  members:
+  - orentol
+  - bizzappdev
+  - elicoidal
+  - astirpe
+  - espo-tony
+  representatives: []
+  name: oca-apps-store
+openupgrade-maintainers:
+  members:
+  - yajo
+  - StefanRijnhart
+  - hbrunn
+  - legalsylvain
+  - cubells
+  - pedrobaeza
+  - JordiBForgeFlow
+  - MiquelRForgeFlow
+  representatives: []
+  name: OpenUpgrade Maintainers
+payroll-maintainers:
+  members:
+  - pedrobaeza
+  representatives: []
+  name: Payroll Maintainers
+pms-maintainers:
+  members:
+  - eantones
+  - DarioLodeiros
+  representatives:
+  - simahawk
+  name: PMS Maintainers
+pos-maintainers:
+  members:
+  - OSguard
+  - alexis-via
+  - Fkawala
+  - ivantodorovich
+  - legalsylvain
+  - chienandalu
+  - pedrobaeza
+  - rafaelbn
+  - quentinDupont
+  representatives: []
+  name: POS Maintainers
+procurement-purchase-maintainers:
+  members:
+  - kittiu
+  - yvaucher
+  - JordiBForgeFlow
+  - HviorForgeFlow
+  representatives:
+  - jgrandguillaume
+  - gurneyalex
+  name: Procurement & Purchase Maintainers
+product-maintainers:
+  members:
+  - jjscarafia
+  - JordiBForgeFlow
+  - rousseldenis
+  representatives:
+  - jgrandguillaume
+  - gurneyalex
+  name: Product Maintainers
+project-agile-maintainers:
+  members: []
+  representatives:
+  - dreispt
+  name: Project Agile Maintainers
+project-service-maintainers:
+  members:
+  - alexey-pelykh
+  - grindtildeath
+  - yajo
+  - leemannd
+  - yvaucher
+  - pedrobaeza
+  - rafaelbn
+  - sbejaoui
+  - rousseldenis
+  - AaronHForgeFlow
+  - ddufresne
+  representatives:
+  - jgrandguillaume
+  - simahawk
+  - dreispt
+  - gurneyalex
+  name: Project & Service Maintainers
+reporting-engine-maintainers:
+  members:
+  - faide
+  - alexis-via
+  - etobella
+  - HviorForgeFlow
+  representatives:
+  - lmignon
+  name: Reporting Engine Maintainers
+rest-framework-maintainers:
+  members:
+  - lmignon
+  - sebastienbeau
+  representatives:
+  - simahawk
+  - sbidoul
+  - gurneyalex
+  name: REST Framework Maintainers
+rest-framework-maintainers-psc-representative:
+  members:
+  - lmignon
+  representatives: []
+  name: REST Framework Maintainers PSC Representative
+role-policy-maintainers:
+  members:
+  - joaoalf
+  - fblauer
+  - mmalorni
+  - Ehtaga
+  - pankk
+  - EvvFoxy
+  - luc-demeyer
+  - ddico
+  - ddufresne
+  representatives: []
+  name: Role Policy Maintainers
+search-engine-maintainers:
+  members:
+  - lmignon
+  - sebastienbeau
+  - etobella
+  - HviorForgeFlow
+  representatives:
+  - simahawk
+  name: Search Engine Maintainers
+server-environment-maintainers:
+  members:
+  - yvaucher
+  representatives: []
+  name: Server Environment Maintainers
+social-maintainers:
+  members:
+  - yajo
+  - antespi
+  - hbrunn
+  - pedrobaeza
+  - rafaelbn
+  - etobella
+  representatives:
+  - simahawk
+  name: Social Maintainers
+storage-maintainers:
+  members:
+  - lmignon
+  - sebastienbeau
+  - hparfr
+  representatives:
+  - simahawk
+  name: Storage Maintainers
+tools-maintainers:
+  members:
+  - guewen
+  - lmignon
+  - yajo
+  - OSguard
+  - thomaspaulb
+  - hbrunn
+  - sebalix
+  - pedrobaeza
+  - LoisRForgeFlow
+  - joao-p-marques
+  representatives:
+  - simahawk
+  - dreispt
+  - gurneyalex
+  name: Tools Maintainers
+vertical-abbey-maintainers:
+  members:
+  - alexis-via
+  representatives: []
+  name: Vertical Abbey Maintainers
+vertical-agriculture-maintainers:
+  members:
+  - max3903
+  - bjoliveau
+  - bealdav
+  representatives: []
+  name: Vertical Agriculture Maintainers
+vertical-association-maintainers:
+  members:
+  - chienandalu
+  - pedrobaeza
+  - rafaelbn
+  representatives: []
+  name: Vertical Association Maintainers
+vertical-community-maintainers:
+  members:
+  - YannickB
+  representatives: []
+  name: Vertical Community Maintainers
+vertical-community-maintainers-project-leader:
+  members:
+  - YannickB
+  representatives:
+  - jgrandguillaume
+  name: Vertical Community Maintainers Project Leader
+vertical-construction-maintainers:
+  members:
+  - max3903
+  - mathi123
+  representatives: []
+  name: Vertical Construction Maintainers
+vertical-edition-maintainers:
+  members:
+  - max3903
+  - bjoliveau
+  representatives: []
+  name: Vertical Edition Maintainers
+vertical-education-maintainers:
+  members:
+  - JayVora-SerpentCS
+  representatives: []
+  name: Vertical Education Maintainers
+vertical-hotel-maintainers:
+  members:
+  - nhomar
+  - JayVora-SerpentCS
+  representatives: []
+  name: Vertical Hotel Maintainers
+vertical-isp-maintainers:
+  members:
+  - joaoalf
+  - max3903
+  - bjoliveau
+  - JayVora-SerpentCS
+  representatives:
+  - dreispt
+  name: Vertical ISP Maintainers
+vertical-medical-maintainers:
+  members:
+  - nhomar
+  - rgarnau
+  - etobella
+  representatives: []
+  name: Vertical Medical Maintainers
+vertical-ngo-maintainers:
+  members: []
+  representatives:
+  - jgrandguillaume
+  - gurneyalex
+  name: Vertical NGO Maintainers
+vertical-real-estate-maintainers:
+  members:
+  - acysos
+  - rousseldenis
+  representatives: []
+  name: Vertical Real Estate Maintainers
+vertical-rental-maintainers:
+  members:
+  - marylla
+  - rousseldenis
+  - benbrich
+  - fkantelberg
+  representatives:
+  - OSevangelist
+  - gurneyalex
+  name: Vertical Rental Maintainers
+vertical-rental-psc-representative:
+  members: []
+  representatives:
+  - gurneyalex
+  name: Vertical Rental PSC Representative
+vertical-travel-maintainers:
+  members:
+  - max3903
+  - plamarche
+  representatives: []
+  name: Vertical Travel Maintainers
+web-maintainers:
+  members:
+  - guewen
+  - Tardo
+  - yajo
+  - StefanRijnhart
+  - OSguard
+  - lepistone
+  - hbrunn
+  - legalsylvain
+  - yvaucher
+  - pedrobaeza
+  - tarteo
+  - etobella
+  representatives:
+  - jgrandguillaume
+  - simahawk
+  - gurneyalex
+  name: Web Maintainers
+website-maintainers:
+  members:
+  - nhomar
+  - guewen
+  - yajo
+  - OSguard
+  - antespi
+  - hbrunn
+  - pedrobaeza
+  - rafaelbn
+  - gfcapalbo
+  - tarteo
+  representatives:
+  - simahawk
+  name: Website Maintainers
