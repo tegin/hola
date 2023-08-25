@@ -1,21 +1,23 @@
-import yaml
-import github3
-import sys
-from github3.exceptions import NotFoundError
 import logging
-import tempfile
-import subprocess
-import copier
 import shutil
+import subprocess
+import sys
+import tempfile
 from subprocess import CalledProcessError
+
+import copier
+import github3
+import yaml
+from github3.exceptions import NotFoundError
 
 handler = logging.StreamHandler(sys.stdout)
 handler.setLevel(logging.INFO)
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 handler.setFormatter(formatter)
 logging.basicConfig(level=logging.INFO, handlers=[handler])
 
 _logger = logging.getLogger(__name__)
+
 
 def check_call(cmd, cwd, log_error=True, extra_cmd_args=False, env=None):
     if extra_cmd_args:
@@ -40,7 +42,7 @@ org = sys.argv[1]
 token = sys.argv[2]
 version = sys.argv[3]
 admin_team = sys.argv[4]
-#maintainer_teams = ["core-maintainers"]
+# maintainer_teams = ["core-maintainers"]
 maintainer_teams = []
 new_repo_template = "git+https://github.com/OCA/oca-addons-repo-template"
 
@@ -55,7 +57,9 @@ gh_org = gh.organization(org)
 repositories = gh_org.repositories()
 repo_keys = [repo.name for repo in repositories]
 gh_admin_team = gh_org.team_by_name(admin_team)
-gh_maintainer_teams = [gh_org.team_by_name(maintainer_team) for maintainer_team in maintainer_teams]
+gh_maintainer_teams = [
+    gh_org.team_by_name(maintainer_team) for maintainer_team in maintainer_teams
+]
 for team, data in psc_data.items():
     _logger.info("Generating team %s" % team)
     try:
@@ -82,21 +86,19 @@ for team, data in psc_data.items():
         else:
             done_representatives.append(member.login)
     for member in members:
-        if member not in done_members: 
+        if member not in done_members:
             _logger.info("Adding membership to %s" % member)
             gh_team.add_or_update_membership(member, role="member")
     for member in representatives:
-        if member not in done_representatives: 
+        if member not in done_representatives:
             _logger.info("Adding membership to %s" % member)
             gh_team.add_or_update_membership(member, role="maintainer")
 team_repos = {}
 for repo, repo_data in repositories_data.items():
     if repo not in repo_keys:
-        gh_repo = gh_org.create_repository(
-            repo, repo, team_id=gh_admin_team.id
-        )
+        gh_repo = gh_org.create_repository(repo, repo, team_id=gh_admin_team.id)
         for gh_maintainer_team in gh_maintainer_teams:
-            gh_maintainer_team.add_repository("%s/%s" % (org, repo), "admin")
+            gh_maintainer_team.add_repository("{}/{}".format(org, repo), "admin")
         try:
             clone_dir = tempfile.mkdtemp()
             copier.run_auto(
@@ -114,7 +116,8 @@ for repo, repo_data in repositories_data.items():
             )
             gh_user = gh.me()
             check_call(
-                ["git", "config", "user.name", gh_user.name or gh_user.login], cwd=clone_dir
+                ["git", "config", "user.name", gh_user.name or gh_user.login],
+                cwd=clone_dir,
             )
             email = gh_user.email
             if not email:
@@ -122,9 +125,7 @@ for repo, repo_data in repositories_data.items():
                     if gh_mail.primary:
                         email = gh_mail.email
                         break
-            check_call(
-                ["git", "config", "user.email", email], cwd=clone_dir
-            )
+            check_call(["git", "config", "user.email", email], cwd=clone_dir)
             check_call(
                 ["git", "add", "-A"],
                 cwd=clone_dir,
@@ -156,7 +157,7 @@ for repo, repo_data in repositories_data.items():
                 ["git", "push", "origin", "HEAD"],
                 cwd=clone_dir,
             )
-        except CalledProcessError as e:
+        except CalledProcessError:
             _logger.error("Something failed when the new repo was being created")
             raise
         finally:
@@ -165,8 +166,13 @@ for repo, repo_data in repositories_data.items():
         gh_repo = gh.repository(org, repo)
     if repo_data["psc"] not in team_repos:
         gh_team = gh_org.team_by_name(repo_data["psc"])
-        team_repos[repo_data["psc"]] = {"team": gh_team, "repos": [repo.name for repo in gh_team.repositories()]}
+        team_repos[repo_data["psc"]] = {
+            "team": gh_team,
+            "repos": [repo.name for repo in gh_team.repositories()],
+        }
     if repo not in team_repos[repo_data["psc"]]["repos"]:
-        team_repos[repo_data["psc"]]["team"].add_repository("%s/%s" % (org, repo), "push")
+        team_repos[repo_data["psc"]]["team"].add_repository(
+            "{}/{}".format(org, repo), "push"
+        )
     for member in repo_data.get("maintainers", []):
         gh_repo.add_collaborator(member)
