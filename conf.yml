@@ -1,0 +1,9 @@
+owner: board
+team_maintainers:
+  []
+  # - core-maintainers
+maintainers:
+  []
+  # - "oca-travis"
+  # - "oca-transbot"
+  # - "OCA-git-bot"
