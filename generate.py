@@ -49,6 +49,7 @@ def create_branch(repo, version):
             data={
                 "repo_name": repo,
                 "repo_slug": repo,
+                "repo_description": repo,
                 "odoo_version": version,
             },
         )
