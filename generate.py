@@ -45,6 +45,7 @@ def create_branch(repo, version):
             new_repo_template,
             clone_dir,
             defaults=True,
+            unsafe=True,
             data={
                 "repo_name": repo,
                 "repo_slug": repo,
