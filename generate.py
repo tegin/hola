@@ -41,7 +41,7 @@ def check_call(cmd, cwd, log_error=True, extra_cmd_args=False, env=None):
 def create_branch(repo, version):
     try:
         clone_dir = tempfile.mkdtemp()
-        copier.run_auto(
+        copier.run_copy(
             new_repo_template,
             clone_dir,
             defaults=True,
