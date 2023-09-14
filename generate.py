@@ -188,5 +188,5 @@ for repo, repo_data in repositories_data.items():
     for member in repo_data.get("maintainers", []):
         gh_repo.add_collaborator(member)
     for branch in repo_data.get("branches"):
-        if branch not in repo_branches:
-            create_branch(repo, branch)
+        if str(branch) not in repo_branches:
+            create_branch(repo, str(branch))
